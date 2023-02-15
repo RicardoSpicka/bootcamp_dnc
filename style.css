@@ -135,9 +135,7 @@ input[type="checkbox"]{
 
 input[type="submit"]{
     height: 56px;
-    width: 630px;
-    left: 405px;
-    top: 1465px;
+    width: 100%;
     border-radius: 10px;
     background-color: #0C70F2;
     border: 0px;
@@ -151,4 +149,198 @@ input[type="submit"]{
 
 }
 
+/*RODAPÉ*/
 
+footer{
+    width: 100%;
+    background-color: #0C70F2; 
+    font-family: 'Inter', sans-serif;
+    color: white;
+    text-align: center;
+
+
+}
+
+.linha1{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.linha1 nav{
+    align-content: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 330px;
+}
+
+.linha1 ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+.linha1 li{
+    list-style: none;
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+
+.linha1 li a{
+    list-style: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+}
+
+    .linha1 li a:hover{
+        color: #cccccc;
+    }
+
+.linha1 h1{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.linha1 nav h1{
+    background-color: black;
+    border-radius: 10px;
+    padding: 7px;
+}
+
+.endereco{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.linha2{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+@media only screen and (max-width: 600px) {
+   
+    #principal{
+        flex-direction: column;
+        height: auto;
+    }    
+
+    #menu{
+        flex-direction: column;
+        width: 100%;
+        margin: 0px;
+        align-items: center;
+    }
+
+    #menu a{
+       display: flex;
+       align-items: center;
+       height: 50px;
+       align-items: center;
+    }
+
+    #principal button{
+        width: 100%;
+        margin: 0px;
+    }
+
+    section{
+        margin-top: 30px;
+        width: 100%;
+    }
+    
+    section h1{
+        font-size: 38px;
+    } 
+
+    section h2{
+        font-size: 14px;
+        padding-right: 15px;
+        padding-left: 15px;
+    } 
+
+    section .invert{
+        font-size: 14px;
+        padding: 1px;
+    }
+
+    form{
+        width: 95%;
+    }
+
+    .form-group{
+        width: 100%;
+        font-size: 15px;
+        
+    }
+
+    .form-group input{
+        padding: 5px;
+        font-size: 15px;
+    }
+
+    .checkbox-itens label{
+        font-size: 15px;
+    }
+
+    input[type="checkbox"]{
+        transform: scale(1);
+    }
+
+    input[type="submit"]{
+        height: 56px;
+        width: 100%;
+        border-radius: 10px;
+        background-color: #0C70F2;
+        border: 0px;
+        color: white;
+        font-weight: 600;
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
+        box-shadow: 3px 2px 4px rgba(12,112,242, 0.30) ;
+        cursor: pointer;
+        margin: 30px 0 30px 0;
+    
+    }
+
+    footer{
+        flex-direction: column;
+    }
+
+    .linha1{
+        flex-direction: column;
+    }
+
+    .linha1 nav{
+        height: auto;
+    }
+
+    .linha1 li{
+        font-size: 15px;
+    }
+    
+    .linha1 li a{
+        font-size: 15px;
+    }
+      
+    .linha1 h1{
+        font-size: 15px;
+    }
+      
+    .endereco{
+        font-size: 15px;
+    }
+    
+    .linha2 h1{
+        font-size: 15px;
+    }
+
+
+  }
